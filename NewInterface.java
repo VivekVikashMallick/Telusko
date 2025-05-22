@@ -46,8 +46,27 @@
 
 interface A
 {
-     int age = 31;    
+
+    // public static int getAge() {
+    //     int age;
+    //     return age;
+    // }
+
+    // public static String getArea() {
+    //     String area;
+    //     return area;
+    // }
+     int age = 31;
      String area = "Delhi";
+    // public static String getArea() {
+    //     return area;
+    // }
+
+    // public static int getAge() {
+    //     return age;
+    // }
+    // int age = 31;    
+     //String area = "Delhi";
 
   void show();
   void config(); 
@@ -83,6 +102,7 @@ interface Y extends X
         System.out.println("in a config method");
     }
 
+    @SuppressWarnings("override")
     public void run()
     {
         System.out.println("run fast");
