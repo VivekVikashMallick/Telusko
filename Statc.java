@@ -12,8 +12,9 @@ class Mobile
         price = 200;
         System.out.println("In a constructor");
     }
-    static
+    static 
     {
+        // static block will be executed only once when the class is loaded into memory.
         name = "phone";
         System.out.println("This is a static block");
     }
@@ -33,13 +34,20 @@ public class Statc
 {
     public static void main(String[] args) throws ClassNotFoundException 
     {
-       // Mobile obj1 = new Mobile();
-        // obj1.brand = "Nokia";
-        // obj1.price = 15000;
-       // Mobile.name = "Smartphone";
+    //    Mobile obj1 = new Mobile();
+    //     obj1.brand = "Nokia";
+    //     obj1.price = 15000;
+    //    Mobile.name = "Smartphone";
         
-        // Mobile obj2 = new Mobile();
-        Class.forName("Mobile");
+    //     Mobile obj2 = new Mobile();
+       Class.forName("Mobile");
+
+    //    Everytime we create the object , there are 2 step behind the scene.
+    //    1)class is loaded into memory.
+    //    2) objects are instantiated.
+    // There is a special are inside the JVM called class loader which is responsible for loading the class into memory.
+   // so all the class get loaded from library to the class loader.
+
 
     }
 
