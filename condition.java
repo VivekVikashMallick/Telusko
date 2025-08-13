@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class condition {
+public class Condition {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             int salary;
@@ -12,7 +12,8 @@ public class condition {
                 salary= salary+2000;
                 System.out.println("salary : " + salary);
             }
-        }    
+        } 
+        System.out.println(args.getClass().getName());   
     }
     
 }

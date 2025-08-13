@@ -5,8 +5,8 @@ class Human
 
 // There is a standard which we follow that whenever we have to perform an operation we should do it inside a method.Don't do it in a openly statement like above.(assignment or calculation.)
   
-  private String name ;
   private int age;
+    private String name;
   
 
 //  Here we are using encapsulation to hide the data members of the class.
