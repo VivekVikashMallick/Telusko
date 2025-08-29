@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Loops {
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         int a = sc.nextInt();
