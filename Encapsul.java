@@ -5,7 +5,7 @@ class Human
 
 // There is a standard which we follow that whenever we have to perform an operation we should do it inside a method.Don't do it in a openly statement like above.(assignment or calculation.)
   
-  private int age;
+    private int age;
     private String name;
   
 
@@ -45,10 +45,16 @@ class Human
     }
 
     public int getAge() {
+    
         return age;
     }
 
+    // public void setAge(int age,Human obj) {
+    //     // Here we are passing the obj object itself to set the data.But we can also achieve this by using this keyword.
+    //     Human obj1 = obj;
+    //     obj1.age = age;
     public void setAge(int age) {
+
         this.age = age;
     }
 
@@ -60,9 +66,13 @@ public class Encapsul {
     {
      Human obj = new Human();
        obj.setName("Mono");
-       // obj.abc("Mono");
-        obj.setAge(25);
+      //  obj.abc("Mono");
+       obj.setAge(25);
+       
         // here we are assigning the value to the private data members of the class using the setter method.
+
+         //obj.setAge(25,obj);
+         // Here we are passing the object of the class to the setter method.
     System.out.println(obj.getName() + " : " + obj.getAge());
     //  System.out.println(obj.xyz() + " : " + obj.getAge());   
     //  we can put any name insteed getName() and setName() method.
