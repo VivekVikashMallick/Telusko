@@ -111,8 +111,7 @@ public class NeedOfInterface
         @SuppressWarnings("unused")
         Computer lap = new Laptop();
        
-        @SuppressWarnings("unused")
-      //  Desktop desk = new Desktop();
+        //  Desktop desk = new Desktop();
         Computer desk = new Desktop();
 
        Developer Manish = new Developer();
