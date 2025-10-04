@@ -47,7 +47,8 @@
 interface A
 {
 
-    public static int getAge() {
+   public static int getAge() {
+  // static int getAge() {
         return age;
     }
 
