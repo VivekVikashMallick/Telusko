@@ -109,6 +109,7 @@ public class Inner
 class A
 // static class A is not the right way to code because the static keyword can only be used for the inner class not for the outer class.
 {
+   @SuppressWarnings("unused")
    int age;
 
    public void show()

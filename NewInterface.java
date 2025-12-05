@@ -49,7 +49,7 @@ interface A
 
    public static int getAge() {
   // static int getAge() {
-        return age;
+        return AGE;
     }
 
     // public static int getAge() {
@@ -61,8 +61,10 @@ interface A
     //     String area;
     //     return area;
     // }
-     int age = 31;
-     String area = "Delhi";
+     //public static final int AGE = 31;
+     int AGE = 31;
+    // public static final String AREA = "Delhi";
+     String AREA = "Delhi";
     // public static String getArea() {
     //     return area;
     // }
@@ -131,7 +133,7 @@ public class NewInterface
        X obj1 = new B();
        obj1.run();
       
-       System.out.println(A.age); 
+       System.out.println(A.AGE); 
        
     }
 }
