@@ -3,6 +3,12 @@ import java.util.Arrays;
 
 class Student 
 {
+  public Student(String string, int i) {
+       
+    }
+  public Student() {
+   
+  }
   int rollNo;
   String name;
   int marks;
